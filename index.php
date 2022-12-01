@@ -58,31 +58,25 @@
 </head>
 <body>
     <div class="container">
-        <ul>
-        <?php     
-            
-            
-        ?> 
-        </ul>
-        <table class="table">
-  <thead>
-    <tr>
-    <?php foreach($hotel as $key => $value) :?>
-        <th scope="col"><?php echo $key ?></th>
-        <?php endforeach; ?>
-    </tr>
+    <table class="table">
+        <thead>
+            <tr>
+                <?php foreach($hotel as $key => $value) :?>
+                    <th scope="col"><?php echo $key ?></th>
+                <?php endforeach; ?>
+            </tr>
 
-  </thead>
-  <tbody>
-    <?php foreach($hotels as $hotel) :?>
-        <tr>
-        <?php foreach($hotel as $key => $value) :?>
-            <td><?php echo $value ?></td>
-        <?php endforeach; ?>
-        </tr>
-    <?php endforeach; ?>
-  </tbody>
-</table>
+        </thead>
+        <tbody>
+            <?php foreach($hotels as $hotel) :?>
+            <tr>
+                <?php foreach($hotel as $key => $value) :?>
+                <td><?php echo $value ?></td>
+            <?php endforeach; ?>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
     </div>
 </body>
 </html>
