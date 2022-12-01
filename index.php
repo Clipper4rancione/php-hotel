@@ -53,7 +53,13 @@
 <body>
     <div class="container">
         <ul>
-            <li></li>
+        <?php     
+            foreach($hotels as $hotelList){
+                foreach($hotelList as $key => $hotel){
+                    echo "<li>$key: $hotel</li>";
+                }
+            }            
+        ?> 
         </ul>
     </div>
 </body>
